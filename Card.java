@@ -69,6 +69,10 @@ public class Card {
 	 *         false otherwise.
 	 */
 	public boolean matches(Card otherCard) {
+		/* I would rather you call the methods, in the
+		 * spirit of these being private variables,
+		 * but this works
+		 */
 		if(rank == otherCard.rank && suit == otherCard.suit && pointValue == otherCard.pointValue) {
 			return true;
 		}
